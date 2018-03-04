@@ -58,7 +58,6 @@ def union_сlose_point(alpha, p):
     p = newP
     return np.array(alpha), np.array(p)
 
-
 # удаление точек с малыми весами
 def remove_point(alpha, p):
     delta = 0.15
