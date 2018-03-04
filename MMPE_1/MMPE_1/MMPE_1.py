@@ -1,6 +1,7 @@
 import numpy as np
 from scipy.optimize import minimize 
 import matplotlib.pyplot as plt
+import MMPE_2 as lr2
 #количество неизв параметров
 s = 2
 #количество точек плана
@@ -152,5 +153,5 @@ def direct_gradient(alpha_0, p_0):
 if __name__ == "__main__":
     #create_start_plan()
     alpha_0, p_0 = get_start_plan()
-    direct_gradient(alpha_0, p_0)
-
+    #direct_gradient(alpha_0, p_0)
+    lr2.dual_gradient(alpha_0, p_0)
